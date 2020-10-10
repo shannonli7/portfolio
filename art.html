@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shannon's Creative Portfolio</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="websitestyles.css">
+  <!-- fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <link href="https://fonts.fontself.com/gE309jx/gilbert-color-bold-preview5.css" rel="stylesheet">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<script>
+  $(".nav-item").on("click", function() {
+    $(".nav").find(".active").removeClass("active");
+    $(this).addClass("active");
+  });
+</script>
+<!-- responsive navbarwith bootstrap -->
+<header>
+  <nav class=" nav navbar navbar-expand-lg navbar-light shadow p-3 mb-5 bg-white rounded">
+    <a class="navbar-brand" href="#"><img src="images/signature.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" id="hello" href="website339.html">hello</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="advocacy" href="advocacy.html">advocacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="design" href="design.html">design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="art" href="art.html">art</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="kitchen" href="kitchen.html">kitchen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contactme" href="contactme.html">contact me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="art-container">
+    <div class="art-topic">
+      <p> art </p>
+      <a href="#art-content-id">
+        <h2><span> let's see </span></h2>
+      </a>
+    </div>
+  </div>
+
+
+  <hr class="border">
+
+  <main class="art-content" id="art-content-id">
+    <div class="container">
+      <div class="gallery">
+        <div class="galleryitem galleryitem1">
+          <div class="flip-card-inner">
+            <a>
+              <div class="flip-card-front">
+                <img src="images/artwork_1.png" alt="Gallery image 1" class="galleryimg">
+              </div>
+            </a>
+            <div class="flip-card-back flip-card-back-1">
+              Lauren Silva
+            </div>
+          </div>
+        </div>
+        <div class="galleryitem galleryitem2">
+          <div class="flip-card-inner">
+            <a>
+              <div class="flip-card-front">
+                <img src="images/artwork_2.png" alt="Gallery image 2" class="galleryimg">
+              </div>
+            </a>
+            <div class="flip-card-back flip-card-back-2">
+              <div>Alison Roh</div>
+            </div>
+          </div>
+        </div>
+        <div class="galleryitem galleryitem3">
+          <div class="flip-card-inner">
+            <a>
+              <div class="flip-card-front">
+                <img src="images/artwork_3.png" alt="Gallery image 3" class="galleryimg">
+              </div>
+            </a>
+            <div class="flip-card-back flip-card-back-3">
+              <div>Morgan Anderson</div>
+            </div>
+          </div>
+        </div>
+        <div class="galleryitem galleryitem4">
+          <div class="flip-card-inner">
+            <a>
+              <div class="flip-card-front">
+                <img src="images/artwork_4.png" alt="Gallery image 4" class="galleryimg">
+              </div>
+            </a>
+            <div class="flip-card-back flip-card-back-4">
+              <div>Doris Mei</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="next-prev-button">
+    <a href="design.html" class="previous">&#8249; design</a>
+    <a href="kitchen.html" class="next">kitchen &#8250;</a>
+  </div>
+  <button onclick="topFunction()" id="go-up-button" title="Go to top">go back up</button>
+  </main>
+  </div>
+  <!-- active state of the nav bar added -->
+  <script>
+    $('.navbar-nav .nav-link').click(function() {
+      $('.navbar-nav .nav-link').removeClass('active');
+      $(this).addClass('active');
+    })
+    mybutton = document.getElementById("go-up-button");
+
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- responsive footer with bootstrap -->
+  <footer>
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left text-center">
+          <p class="motto"> powered by passion, creativity, and a bunch of love</p>
+          <div id="heart"></div>
+        </div>
+        <div class="col-md-3 contact-info">
+            <a href="https://www.linkedin.com/in/shannonli7/" target="_blank" aria-label="linkedin" class="fa fa-linkedin"></a>
+            <a href="https://twitter.com/lishanno" target="_blank" aria-label="twitter" class="fa fa-twitter"></a>
+            <a href="https://open.spotify.com/user/1274191877?si=0VzMUhLiTRC1TDVVfuOUsA" aria-label="spotify" target="_blank" class="fa fa-spotify"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3"> &copy Shannon Li</div>
+  </footer>
+</body>
+
+</html>
