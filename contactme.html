@@ -79,8 +79,38 @@
     <div class="image"></div>
 
 <!-- <iframe src="https://open.spotify.com/embed/playlist/4eVWe96VWBjYCT7HK6SmCJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+<br>
+<form action="https://formspree.io/f/mjvpyyrz" method="POST">
+ <fieldset>
+   <legend>Contact Me</legend>
 
+   <br>
+   <label for="name_id">Your Name</label>
+   <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+   </br>
 
+   <br>
+   <label for="email_id">Your Email</label>
+   <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+   </br>
+
+   <br>
+   <label for="phone_id">Your Phone Number</label>
+
+   <br>
+   <div class="contact-me-format"><span>Format: 123-456-7890</span></div>
+   <br>
+   <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+   </br>
+
+   <br>
+   <label for="msg">Leave A Message</label>
+   <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+
+   <br>
+   <input type="submit" class = "btn-contact-me-form" value = "Contact Me">
+ </fieldset>
+</form>
   </main>
 
   <!-- active state of the nav bar added -->
