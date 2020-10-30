@@ -21,11 +21,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKCPLRLT8N">
   $(".nav-item").on("click", function() {
-    $(".nav").find(".active").removeClass("active");
     $(this).addClass("active");
   });
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KKCPLRLT8N');
 </script>
 <!-- responsive navbarwith bootstrap -->
 <header>
