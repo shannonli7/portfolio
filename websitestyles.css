@@ -584,9 +584,9 @@ p {
 .kitchencontainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(50, 50vw);
-  grid-gap: 1.5em;
-  padding-left: 110px;
+  grid-template-rows: repeat(10, 50vw);
+  grid-gap: 3em;
+  padding-left: 40px;
   padding-top: 50px;
 }
 
@@ -1183,9 +1183,10 @@ footer {
   .kitchencontainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(50, 30vw);
+    grid-template-rows: repeat(10, 30vw);
     grid-gap: 1.5em;
     padding-top: 50px;
+    padding-left: 65px;
   }
 
   .img_wrap_1 {
@@ -1411,7 +1412,7 @@ footer {
   .kitchencontainer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(50, 20vw);
+    grid-template-rows: repeat(10, 20vw);
     grid-gap: 1.5em;
     padding-left: 30px;
     padding-right: 10px;
