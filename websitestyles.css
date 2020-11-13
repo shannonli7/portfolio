@@ -1112,6 +1112,12 @@ footer {
   color: grey;
 }
 
+iframe{
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+}
 /* for tablet styling */
 @media only screen and (min-width:768px) {
 

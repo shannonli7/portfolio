@@ -23,7 +23,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKCPLRLT8N"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-KKCPLRLT8N');
@@ -85,40 +88,41 @@
     <div class="parallax"></div>
 
     <div class="image"></div>
+    <br>
+    <form action="https://formspree.io/f/mjvpyyrz" method="POST">
+      <fieldset>
+        <legend>Contact Me</legend>
 
-<!-- <iframe src="https://open.spotify.com/embed/playlist/4eVWe96VWBjYCT7HK6SmCJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
-<br>
-<form action="https://formspree.io/f/mjvpyyrz" method="POST">
- <fieldset>
-   <legend>Contact Me</legend>
+        <br>
+        <label for="name_id">Your Name</label>
+        <input type="text" placeholder="Enter Your Name" id="name_id" name="name" required>
+        </br>
 
-   <br>
-   <label for="name_id">Your Name</label>
-   <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
-   </br>
+        <br>
+        <label for="email_id">Your Email</label>
+        <input type="email" placeholder="Enter Your Email" id="email_id" name="email" required>
+        </br>
 
-   <br>
-   <label for="email_id">Your Email</label>
-   <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
-   </br>
+        <br>
+        <label for="phone_id">Your Phone Number</label>
 
-   <br>
-   <label for="phone_id">Your Phone Number</label>
+        <br>
+        <div class="contact-me-format"><span>Format: 123-456-7890</span></div>
+        <br>
+        <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-label="phone_validation" required>
+        </br>
 
-   <br>
-   <div class="contact-me-format"><span>Format: 123-456-7890</span></div>
-   <br>
-   <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-label= "phone_validation" required>
-   </br>
+        <br>
+        <label for="msg">Leave A Message</label>
+        <textarea placeholder="Enter your message" id="msg" name="mesg" required></textarea><br>
 
-   <br>
-   <label for="msg">Leave A Message</label>
-   <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
-
-   <br>
-   <input type="submit" class = "btn-contact-me-form" value = "Contact Me">
- </fieldset>
-</form>
+        <br>
+        <input type="submit" class="btn-contact-me-form" value="Contact Me">
+      </fieldset>
+    </form>
+    <iframe src="https://open.spotify.com/embed/playlist/3yPwheKZwrpEyiP63asQ0l" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/1RgxasteYqtck3Ln8NTDoH" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/6KNBa11M0agAEns9tDq6HX" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
   </main>
 
   <!-- active state of the nav bar added -->
@@ -127,7 +131,7 @@
       $('.navbar-nav .nav-link').removeClass('active');
       $(this).addClass('active');
     })
-</script>
+  </script>
   <!-- responsive footer with bootstrap -->
   <footer>
     <div class="container-fluid text-center text-md-left">
@@ -137,9 +141,9 @@
           <div id="heart"></div>
         </div>
         <div class="col-md-3 contact-info">
-            <a href="https://www.linkedin.com/in/shannonli7/" target="_blank" aria-label="linkedin" class="fa fa-linkedin"></a>
-            <a href="https://twitter.com/lishanno" target="_blank" aria-label="twitter" class="fa fa-twitter"></a>
-            <a href="https://open.spotify.com/user/1274191877?si=0VzMUhLiTRC1TDVVfuOUsA" aria-label="spotify" target="_blank" class="fa fa-spotify"></a>
+          <a href="https://www.linkedin.com/in/shannonli7/" target="_blank" aria-label="linkedin" class="fa fa-linkedin"></a>
+          <a href="https://twitter.com/lishanno" target="_blank" aria-label="twitter" class="fa fa-twitter"></a>
+          <a href="https://open.spotify.com/user/1274191877?si=0VzMUhLiTRC1TDVVfuOUsA" aria-label="spotify" target="_blank" class="fa fa-spotify"></a>
         </div>
       </div>
     </div>
